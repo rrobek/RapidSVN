@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RapidSVN 0.12.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-24 09:28+0200\n"
+"POT-Creation-Date: 2020-06-14 22:09+0200\n"
 "PO-Revision-Date: 2012-09-11 23:20+0300\n"
 "Last-Translator: Alexey Reztsov <ariafan@mail.ru>\n"
 "Language-Team: RapidSVN Developers <dev@rapidsvn.tigris.org>\n"
@@ -19,6 +19,13 @@ msgstr ""
 "%100>=20) ? 1 : 2\n"
 "X-Poedit-Language: Russian\n"
 "X-Poedit-Country: RUSSIAN FEDERATION\n"
+
+#: ../filelist_ctrl.cpp:1340
+#, c-format
+msgid "%d element modified"
+msgid_plural "%d elements modified"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../exceptions.cpp:55
 #, c-format
@@ -45,7 +52,7 @@ msgstr "Зафиксирована ревизия"
 msgid "%x %X"
 msgstr "%x %X"
 
-#: ../main_frame.cpp:334
+#: ../main_frame.cpp:339
 msgid "&About..."
 msgstr "&О программе..."
 
@@ -65,7 +72,7 @@ msgstr "&Авторство строк"
 msgid "&Annotate..."
 msgstr "&Авторство строк..."
 
-#: ../main_frame.cpp:365
+#: ../main_frame.cpp:370
 msgid "&Bookmarks"
 msgstr "Зак&ладки"
 
@@ -78,7 +85,7 @@ msgstr "Выбрать"
 msgid "&Compatible with:"
 msgstr ""
 
-#: ../main_frame.cpp:327
+#: ../main_frame.cpp:332
 msgid "&Contents\tF1"
 msgstr "&Содержание (в интернете)\tF1"
 
@@ -86,7 +93,7 @@ msgstr "&Содержание (в интернете)\tF1"
 msgid "&Copy...\tF5"
 msgstr "&Копировать...\tF5"
 
-#: ../main_frame.cpp:300
+#: ../main_frame.cpp:305
 msgid "&Create..."
 msgstr "&Создать..."
 
@@ -136,15 +143,15 @@ msgstr "&Изменить..."
 msgid "&Edit...\tF3"
 msgstr "&Изменить...\tF3"
 
-#: ../main_frame.cpp:298
+#: ../main_frame.cpp:303
 msgid "&Export...\tCTRL-E"
 msgstr "&Экспорт...\tCTRL-E"
 
-#: ../main_frame.cpp:366
+#: ../main_frame.cpp:371
 msgid "&Extras"
 msgstr "&Прочее"
 
-#: ../main_frame.cpp:360
+#: ../main_frame.cpp:365
 msgid "&File"
 msgstr "&Файл"
 
@@ -156,7 +163,7 @@ msgstr "&Файлы для фиксации"
 msgid "&Get"
 msgstr "&Получить"
 
-#: ../main_frame.cpp:233 ../main_frame.cpp:367
+#: ../main_frame.cpp:238 ../main_frame.cpp:372
 msgid "&Help"
 msgstr "&Справка"
 
@@ -164,11 +171,11 @@ msgstr "&Справка"
 msgid "&Ignore\tCTRL-DEL"
 msgstr "&Игнорировать\tCTRL-DEL"
 
-#: ../main_frame.cpp:297
+#: ../main_frame.cpp:302
 msgid "&Import...\tCTRL-I"
 msgstr "&Импорт...\tCTRL-I"
 
-#: ../main_frame.cpp:328
+#: ../main_frame.cpp:333
 msgid "&Index\tShift+F1"
 msgstr "&Алфавитный указатель (в интернете) \tShift+F1"
 
@@ -197,7 +204,7 @@ msgstr "&Журнал...\tCTRL-L"
 msgid "&Merge"
 msgstr "&Объединить"
 
-#: ../main_frame.cpp:363
+#: ../main_frame.cpp:368
 msgid "&Modify"
 msgstr "&Операции"
 
@@ -228,7 +235,7 @@ msgstr "&Постоянно"
 msgid "&Properties...\tCTRL-P"
 msgstr "&Свойства...\tCTRL-P"
 
-#: ../main_frame.cpp:364
+#: ../main_frame.cpp:369
 msgid "&Query"
 msgstr "&Запросы"
 
@@ -240,7 +247,7 @@ msgstr "&Последние комментарии:"
 msgid "&Remove Bookmark"
 msgstr "&Удалить закладку..."
 
-#: ../main_frame.cpp:362
+#: ../main_frame.cpp:367
 msgid "&Repository"
 msgstr "&Репозиторий"
 
@@ -260,7 +267,7 @@ msgstr "Изменить URL &репозитория..."
 msgid "&Temporarily"
 msgstr "&Временно"
 
-#: ../main_frame.cpp:369
+#: ../main_frame.cpp:374
 msgid "&Tests"
 msgstr "Тест&ы"
 
@@ -290,7 +297,7 @@ msgstr "Переименование"
 msgid "&Value"
 msgstr "Значение"
 
-#: ../main_frame.cpp:361 ../rapidsvn_generated.cpp:1356
+#: ../main_frame.cpp:366 ../rapidsvn_generated.cpp:1356
 msgid "&View"
 msgstr "&Просмотр"
 
@@ -363,7 +370,7 @@ msgid "Action"
 msgstr "Операция"
 
 #: ../add_action.cpp:37 ../add_recursive_action.cpp:37 ../listed_dlg.cpp:183
-#: ../main_frame.cpp:1434
+#: ../main_frame.cpp:1441
 msgid "Add"
 msgstr "Добавление"
 
@@ -387,16 +394,16 @@ msgstr "Добавить выбранные"
 msgid "Add to bookmarks"
 msgstr "Добавить в закладки"
 
-#: ../listener.cpp:309 ../main_frame.cpp:1443 ../main_frame.cpp:1450
+#: ../listener.cpp:309 ../main_frame.cpp:1450 ../main_frame.cpp:1457
 msgid "Added"
 msgstr "Добавлено"
 
-#: ../main_frame.cpp:2219
+#: ../main_frame.cpp:2227
 #, c-format
 msgid "Added repository to bookmarks '%s'"
 msgstr "Репозиторий '%s' добавлен в закладки"
 
-#: ../main_frame.cpp:2189
+#: ../main_frame.cpp:2197
 #, c-format
 msgid "Added working copy to bookmarks '%s'"
 msgstr "Рабочая копия '%s' добавлена в закладки"
@@ -424,11 +431,11 @@ msgid ""
 "Also clean up any external items that are located below the selected path."
 msgstr ""
 
-#: ../main_frame.cpp:1308 ../main_frame.cpp:1327
+#: ../main_frame.cpp:1315 ../main_frame.cpp:1334
 msgid "An error occured while launching the browser"
 msgstr "Возникла ошибка при запуске интернет-обозревателя"
 
-#: ../main_frame.cpp:1295
+#: ../main_frame.cpp:1302
 msgid "An error occurred while checking valid actions"
 msgstr "Возникла ошибка при проверке допустимых операций"
 
@@ -477,11 +484,11 @@ msgstr "BASE"
 msgid "BerkeleyDB"
 msgstr ""
 
-#: ../main_frame.cpp:2256
+#: ../main_frame.cpp:2264
 msgid "Bookmark"
 msgstr "Закладка"
 
-#: ../folder_browser.cpp:177
+#: ../folder_browser.cpp:179
 msgid "Bookmarks"
 msgstr "Закладки"
 
@@ -541,7 +548,7 @@ msgstr "Отмена"
 msgid "Certificate information:"
 msgstr "Информация о сертификате:"
 
-#: ../main_frame.cpp:299
+#: ../main_frame.cpp:304
 msgid "Check&out...\tCTRL-O"
 msgstr "Создать &рабочую копию...\tCTRL-O"
 
@@ -609,7 +616,7 @@ msgstr "&Закрыть"
 msgid "Co&mmit...\tCTRL-ENTER"
 msgstr "&Фиксировать изменения...\tCTRL-ENTER"
 
-#: ../main_frame.cpp:275
+#: ../main_frame.cpp:280
 msgid "Columns"
 msgstr "Столбцы"
 
@@ -706,7 +713,7 @@ msgstr "Скопировано из пути"
 msgid "Copied from Rev"
 msgstr "Скопировано из ревизии"
 
-#: ../dnd_dlg.cpp:72 ../main_frame.cpp:1435 ../move_action.cpp:44
+#: ../dnd_dlg.cpp:72 ../main_frame.cpp:1442 ../move_action.cpp:44
 #: ../rapidsvn_generated.cpp:1004
 msgid "Copy"
 msgstr "Копирование"
@@ -765,7 +772,7 @@ msgstr "Дата:"
 msgid "Default"
 msgstr ""
 
-#: ../delete_action.cpp:40 ../main_frame.cpp:1436
+#: ../delete_action.cpp:40 ../main_frame.cpp:1443
 #: ../../include/rapidsvn_generated.h:339
 msgid "Delete"
 msgstr "Удаление"
@@ -798,7 +805,7 @@ msgstr "Прекратить контроль версий для файлов �
 msgid "Delete selected"
 msgstr "Удалить выбранные"
 
-#: ../listener.cpp:310 ../main_frame.cpp:1442 ../main_frame.cpp:1451
+#: ../listener.cpp:310 ../main_frame.cpp:1449 ../main_frame.cpp:1458
 msgid "Deleted"
 msgstr "Удалён"
 
@@ -904,7 +911,7 @@ msgstr "В&ыход\tCTRL-Q"
 msgid "Edit"
 msgstr "Изменение"
 
-#: ../main_frame.cpp:2256
+#: ../main_frame.cpp:2264
 msgid "Edit Bookmark"
 msgstr "Изменить закладку"
 
@@ -951,8 +958,8 @@ msgstr "Введите локальный путь, где вы хотите с�
 msgid "Enter the repository URL (not local path) here."
 msgstr "Введите тут URL репозитория (не локальный путь)."
 
-#: ../main_frame.cpp:562 ../main_frame.cpp:1290 ../main_frame.cpp:1295
-#: ../main_frame.cpp:1308 ../main_frame.cpp:1327 ../main_frame.cpp:2179
+#: ../main_frame.cpp:567 ../main_frame.cpp:1297 ../main_frame.cpp:1302
+#: ../main_frame.cpp:1315 ../main_frame.cpp:1334 ../main_frame.cpp:2187
 #: ../property_dlg.cpp:138
 msgid "Error"
 msgstr "Ошибка"
@@ -999,21 +1006,21 @@ msgstr "Ошибка при подготовке операции."
 msgid "Error while preparing action: %s"
 msgstr "Ошибка при подготовке операции: %s"
 
-#: ../folder_browser.cpp:534
+#: ../folder_browser.cpp:536
 #, c-format
 msgid "Error while refreshing filelist (%s)"
 msgstr "Ошибка при обновлении списка файлов (%s)"
 
-#: ../main_frame.cpp:944
+#: ../main_frame.cpp:949
 msgid "Error while updating filelist"
 msgstr "Ошибка при обновлении списка файлов"
 
-#: ../main_frame.cpp:931
+#: ../main_frame.cpp:936
 #, c-format
 msgid "Error while updating filelist (%s)"
 msgstr "Ошибка при обновлении списка файлов (%s)"
 
-#: ../main_frame.cpp:2049
+#: ../main_frame.cpp:2057
 msgid "Exception occured during filelist update"
 msgstr "Возникла исключительная ситуация во время обновления списка файлов"
 
@@ -1071,11 +1078,11 @@ msgstr "Расширение"
 msgid "FSFS"
 msgstr ""
 
-#: ../main_frame.cpp:1457
+#: ../main_frame.cpp:1464
 msgid "Failed to lock"
 msgstr "Попытка блокировки не удалась"
 
-#: ../main_frame.cpp:1458
+#: ../main_frame.cpp:1465
 msgid "Failed to unlock"
 msgstr "Попытка разблокировки не удалась"
 
@@ -1183,7 +1190,7 @@ msgstr ""
 msgid "Ignore"
 msgstr "Игнорировать"
 
-#: ../main_frame.cpp:285
+#: ../main_frame.cpp:290
 msgid "Ignore Externals"
 msgstr "Игнорировать внешние зависимости"
 
@@ -1222,11 +1229,11 @@ msgstr "Интерактивное разре&шение...\tCTRL-T"
 msgid "Include externals"
 msgstr "Игнорировать внешние зависимости"
 
-#: ../main_frame.cpp:280
+#: ../main_frame.cpp:285
 msgid "Indicate modified children"
 msgstr "Выделять изменённые дочерние"
 
-#: ../main_frame.cpp:2299
+#: ../main_frame.cpp:2307
 msgid "Info"
 msgstr "Информация"
 
@@ -1238,7 +1245,7 @@ msgstr "Информация о выбранных"
 msgid "Internal Error: There is another action running"
 msgstr "Внутренняя ошибка: выполняется другая операция"
 
-#: ../main_frame.cpp:1759
+#: ../main_frame.cpp:1766
 msgid "Internal Error: no client data for action event!"
 msgstr "Внутренняя ошибка: отсутствуют данные клиента для операции!"
 
@@ -1289,7 +1296,7 @@ msgstr "Строка"
 msgid "ListEditor"
 msgstr ""
 
-#: ../filelist_ctrl.cpp:1064
+#: ../filelist_ctrl.cpp:1069
 #, c-format
 msgid "Listing entries in '%s'"
 msgstr "Вывод содержимого в '%s'"
@@ -1355,7 +1362,7 @@ msgstr "Обладатель блокировки: %s"
 msgid "Lock Token: %s"
 msgstr "Ключ блокировки: %s"
 
-#: ../main_frame.cpp:1455
+#: ../main_frame.cpp:1462
 msgid "Locked"
 msgstr "Заблокировано"
 
@@ -1379,11 +1386,11 @@ msgstr "Журнал файла/каталога"
 msgid "Login..."
 msgstr "Войти..."
 
-#: ../folder_browser.cpp:338
+#: ../folder_browser.cpp:340
 msgid "Logout"
 msgstr "Выйти"
 
-#: ../folder_browser.cpp:343
+#: ../folder_browser.cpp:345
 #, c-format
 msgid "Logout '%s'"
 msgstr "Выход '%s'"
@@ -1416,7 +1423,7 @@ msgstr "Программа объединения"
 msgid "Merge revisions"
 msgstr "Объединить ревизии"
 
-#: ../main_frame.cpp:304
+#: ../main_frame.cpp:309
 msgid "Merge..."
 msgstr "Объединить изменения..."
 
@@ -1434,7 +1441,7 @@ msgstr "Комментарий"
 msgid "Mkdir"
 msgstr "Создание каталога"
 
-#: ../main_frame.cpp:1449
+#: ../main_frame.cpp:1456
 msgid "Modified"
 msgstr "Изменено"
 
@@ -1645,7 +1652,7 @@ msgstr "Ввести у файлов и каталогов контроль ве
 msgid "Question"
 msgstr ""
 
-#: ../main_frame.cpp:530
+#: ../main_frame.cpp:535
 msgid "RapidSVN Error"
 msgstr "Ошибка RapidSVN"
 
@@ -1666,11 +1673,11 @@ msgstr "Ра&зрешить конфликты\tCTRL-S"
 msgid "Re&vert\tCTRL-V"
 msgstr "&Отменить изменения\tCTRL-V"
 
-#: ../filelist_ctrl.cpp:1143
+#: ../filelist_ctrl.cpp:1150
 msgid "Ready"
 msgstr "Готово"
 
-#: ../main_frame.cpp:1739 ../main_frame.cpp:1783
+#: ../main_frame.cpp:1746 ../main_frame.cpp:1790
 msgid "Ready\n"
 msgstr "Готово\n"
 
@@ -1696,7 +1703,7 @@ msgstr "Обновить список файлов\tCTRL-R"
 msgid "Refresh the file list"
 msgstr "Обновить список файлов"
 
-#: ../main_frame.cpp:278
+#: ../main_frame.cpp:283
 msgid "Refresh with Update"
 msgstr "Обновлять из репозитория"
 
@@ -1714,7 +1721,7 @@ msgid ""
 "unfinished operations."
 msgstr ""
 
-#: ../main_frame.cpp:2233
+#: ../main_frame.cpp:2241
 msgid "Removed bookmark"
 msgstr "Закладка удалена"
 
@@ -1726,7 +1733,7 @@ msgstr "Переименование"
 msgid "Rep. Rev."
 msgstr "Рев. реп."
 
-#: ../main_frame.cpp:1452
+#: ../main_frame.cpp:1459
 msgid "Replaced"
 msgstr "Заменено"
 
@@ -1744,7 +1751,7 @@ msgstr "Репозиторий"
 msgid "Repository &URL for import"
 msgstr "Для импорта необходим URL репозитория!"
 
-#: ../main_frame.cpp:2205
+#: ../main_frame.cpp:2213
 msgid "Repository URL"
 msgstr "URL репозитория"
 
@@ -1774,11 +1781,11 @@ msgstr "Разрешение конфликтов"
 msgid "Resolve selected"
 msgstr "Разрешить конфликты у выбранных"
 
-#: ../main_frame.cpp:1440
+#: ../main_frame.cpp:1447
 msgid "Resolved"
 msgstr "Конфликт урегулирован"
 
-#: ../main_frame.cpp:1437
+#: ../main_frame.cpp:1444
 msgid "Restore"
 msgstr "Восстановление"
 
@@ -1792,7 +1799,7 @@ msgstr ""
 msgid "Resulting repository filename:"
 msgstr ""
 
-#: ../main_frame.cpp:1438 ../revert_action.cpp:35
+#: ../main_frame.cpp:1445 ../revert_action.cpp:38
 #: ../../include/rapidsvn_generated.h:857
 msgid "Revert"
 msgstr "Откат изменений"
@@ -1855,7 +1862,7 @@ msgid "Select a destination folder to merge to"
 msgstr "Укажите целевой каталог для объединения"
 
 #: ../create_repos_dlg.cpp:185 ../create_repos_dlg.cpp:201
-#: ../main_frame.cpp:2159
+#: ../main_frame.cpp:2167
 msgid "Select a directory"
 msgstr "Выберите каталог"
 
@@ -1933,7 +1940,7 @@ msgstr ""
 "Установите этот параметр для игнорирования внешних определений и внешних "
 "рабочих копий, ими управляемых."
 
-#: ../main_frame.cpp:331
+#: ../main_frame.cpp:336
 msgid "Show Startup Tips"
 msgstr "Показывать полезные подсказки при запуске"
 
@@ -1946,7 +1953,7 @@ msgstr "Показывать изменённые файлы/каталоги"
 msgid "Show added files in the log list"
 msgstr ""
 
-#: ../main_frame.cpp:284 ../main_frame_helper.cpp:180
+#: ../main_frame.cpp:289 ../main_frame_helper.cpp:180
 msgid "Show conflicted entries"
 msgstr "Показывать файлы/каталоги в состоянии конфликта"
 
@@ -1973,15 +1980,15 @@ msgstr ""
 msgid "Show entries in subdirectories"
 msgstr "Показывать файлы/каталоги в подкаталогах"
 
-#: ../main_frame.cpp:286
+#: ../main_frame.cpp:291
 msgid "Show ignored entries"
 msgstr "Показывать игнорируемые файлы/каталоги"
 
-#: ../main_frame.cpp:283 ../main_frame_helper.cpp:174
+#: ../main_frame.cpp:288 ../main_frame_helper.cpp:174
 msgid "Show modified entries"
 msgstr "Показывать изменённые файлы/каталоги"
 
-#: ../main_frame.cpp:279 ../main_frame_helper.cpp:156
+#: ../main_frame.cpp:284 ../main_frame_helper.cpp:156
 msgid "Show subdirectories"
 msgstr "Показывать подкаталоги"
 
@@ -1989,11 +1996,11 @@ msgstr "Показывать подкаталоги"
 msgid "Show the log messages for the selected entries"
 msgstr "Показывать комментарии для выбранных файлов/каталогов"
 
-#: ../main_frame.cpp:282 ../main_frame_helper.cpp:168
+#: ../main_frame.cpp:287 ../main_frame_helper.cpp:168
 msgid "Show unmodified entries"
 msgstr "Показывать неизменённые файлы и каталоги"
 
-#: ../main_frame.cpp:281 ../main_frame_helper.cpp:162
+#: ../main_frame.cpp:286 ../main_frame_helper.cpp:162
 msgid "Show unversioned entries"
 msgstr "Показывать неотслеживаемые файлы"
 
@@ -2006,15 +2013,15 @@ msgstr "Показывать неизменённые файлы и катало
 msgid "Show updated files in the log list"
 msgstr ""
 
-#: ../main_frame.cpp:1441
+#: ../main_frame.cpp:1448
 msgid "Skip"
 msgstr "Пропуск"
 
-#: ../main_frame.cpp:276
+#: ../main_frame.cpp:281
 msgid "Sort"
 msgstr "Сортировка"
 
-#: ../main_frame.cpp:252
+#: ../main_frame.cpp:257
 msgid "Sort Ascending"
 msgstr "по возрастанию"
 
@@ -2050,19 +2057,19 @@ msgstr "Хранить аутентификационное удостовере
 msgid "Switch URL"
 msgstr "Смена URL"
 
-#: ../main_frame.cpp:305
+#: ../main_frame.cpp:310
 msgid "Switch URL...\tCTRL-S"
 msgstr "Изменить URL...\tCTRL-S"
 
-#: ../main_frame.cpp:1388
+#: ../main_frame.cpp:1395
 msgid "Test duration"
 msgstr "Длительность теста"
 
-#: ../main_frame.cpp:1384
+#: ../main_frame.cpp:1391
 msgid "Test ended at"
 msgstr "Тест закончен в"
 
-#: ../main_frame.cpp:1381
+#: ../main_frame.cpp:1388
 msgid "Test started at"
 msgstr "Тест начат в"
 
@@ -2128,7 +2135,7 @@ msgstr "UUID"
 msgid "Unicode"
 msgstr "Юникод"
 
-#: ../main_frame.cpp:1701
+#: ../main_frame.cpp:1708
 msgid "Unimplemented action!"
 msgstr "Неподдерживаемая операция!"
 
@@ -2140,7 +2147,7 @@ msgstr "Неизвестный целевой путь"
 msgid "Unlock"
 msgstr "Разблокировка"
 
-#: ../main_frame.cpp:1456
+#: ../main_frame.cpp:1463
 msgid "Unlocked"
 msgstr "Разблокировано"
 
@@ -2157,11 +2164,11 @@ msgstr "Обновить выбранные"
 msgid "Update selected"
 msgstr "Обновить выбранные"
 
-#: ../listener.cpp:311 ../main_frame.cpp:1444
+#: ../listener.cpp:311 ../main_frame.cpp:1451
 msgid "Updated"
 msgstr "Обновлено"
 
-#: ../main_frame.cpp:1773 ../main_frame.cpp:1778
+#: ../main_frame.cpp:1780 ../main_frame.cpp:1785
 #, fuzzy
 msgid "Updating file list..."
 msgstr "Обновление..."
@@ -2174,7 +2181,7 @@ msgstr ""
 msgid "Upgrade Working Copy"
 msgstr ""
 
-#: ../main_frame.cpp:251
+#: ../main_frame.cpp:256
 msgid "Use Path for Sorting"
 msgstr "Использовать путь для сортировки"
 
@@ -2284,15 +2291,15 @@ msgstr ""
 "\n"
 "  %s?"
 
-#: ../main_frame.cpp:2177
+#: ../main_frame.cpp:2185
 msgid "You cannot add a subversion administrative directory to the bookmarks!"
 msgstr "Нельзя добавить в закладки административный каталог subversion!"
 
-#: ../file_info.cpp:150 ../filelist_ctrl.cpp:1273
+#: ../file_info.cpp:150 ../filelist_ctrl.cpp:1297
 msgid "add"
 msgstr "добавить"
 
-#: ../filelist_ctrl.cpp:1235 ../utils.cpp:415
+#: ../filelist_ctrl.cpp:1259 ../utils.cpp:415
 msgid "added"
 msgstr "добавлен"
 
@@ -2300,7 +2307,7 @@ msgstr "добавлен"
 msgid "conflicted"
 msgstr "конфликт"
 
-#: ../file_info.cpp:154 ../filelist_ctrl.cpp:1276
+#: ../file_info.cpp:154 ../filelist_ctrl.cpp:1300
 msgid "delete"
 msgstr "удалить"
 
@@ -2311,6 +2318,10 @@ msgstr "удалён"
 #: ../file_info.cpp:126
 msgid "directory"
 msgstr "каталог"
+
+#: ../filelist_ctrl.cpp:1342
+msgid "element(s) modified"
+msgstr ""
 
 #: ../utils.cpp:439
 msgid "external"
@@ -2336,7 +2347,7 @@ msgstr "объединён"
 msgid "missing"
 msgstr "отсутствует"
 
-#: ../filelist_ctrl.cpp:1238 ../utils.cpp:427
+#: ../filelist_ctrl.cpp:1262 ../utils.cpp:427
 msgid "modified"
 msgstr "изменён"
 
@@ -2360,7 +2371,7 @@ msgstr "нормальный"
 msgid "obstructed"
 msgstr "заслоняет другой файл"
 
-#: ../filelist_ctrl.cpp:1306 ../filelist_ctrl.cpp:1320
+#: ../filelist_ctrl.cpp:1330 ../filelist_ctrl.cpp:1351
 msgid "outdated"
 msgstr "устарел"
 
@@ -2379,7 +2390,7 @@ msgstr "Subversion %d.%d.%d"
 msgid "pre Subversion 1.6"
 msgstr "Subversion %d.%d.%d"
 
-#: ../file_info.cpp:158 ../filelist_ctrl.cpp:1279
+#: ../file_info.cpp:158 ../filelist_ctrl.cpp:1303
 msgid "replace"
 msgstr "заменить"
 

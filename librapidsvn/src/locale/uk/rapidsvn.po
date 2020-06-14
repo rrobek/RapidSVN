@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RapidSVN 0.9.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-24 09:28+0200\n"
+"POT-Creation-Date: 2020-06-14 22:09+0200\n"
 "PO-Revision-Date: 2006-05-15 11:14+0100\n"
 "Last-Translator: Olha <sleepy@adam-i-eva.com>\n"
 "Language-Team: RapidSVN Developers <dev@rapidsvn.tigris.org>\n"
@@ -15,6 +15,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../filelist_ctrl.cpp:1340
+#, c-format
+msgid "%d element modified"
+msgid_plural "%d elements modified"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../exceptions.cpp:55
 #, c-format
@@ -41,7 +48,7 @@ msgstr "Зафіксовано ревізію"
 msgid "%x %X"
 msgstr ""
 
-#: ../main_frame.cpp:334
+#: ../main_frame.cpp:339
 msgid "&About..."
 msgstr "Про програму..."
 
@@ -62,7 +69,7 @@ msgstr ""
 msgid "&Annotate..."
 msgstr "Про програму..."
 
-#: ../main_frame.cpp:365
+#: ../main_frame.cpp:370
 msgid "&Bookmarks"
 msgstr "Закладки"
 
@@ -75,7 +82,7 @@ msgstr "Закрити"
 msgid "&Compatible with:"
 msgstr ""
 
-#: ../main_frame.cpp:327
+#: ../main_frame.cpp:332
 msgid "&Contents\tF1"
 msgstr "Зміст\tF1"
 
@@ -83,7 +90,7 @@ msgstr "Зміст\tF1"
 msgid "&Copy...\tF5"
 msgstr "Копіювати...\tF5"
 
-#: ../main_frame.cpp:300
+#: ../main_frame.cpp:305
 msgid "&Create..."
 msgstr "Створити..."
 
@@ -134,15 +141,15 @@ msgstr "Редагування..."
 msgid "&Edit...\tF3"
 msgstr "Редагувати...\tF3"
 
-#: ../main_frame.cpp:298
+#: ../main_frame.cpp:303
 msgid "&Export...\tCTRL-E"
 msgstr "Експорт...\tCTRL-E"
 
-#: ../main_frame.cpp:366
+#: ../main_frame.cpp:371
 msgid "&Extras"
 msgstr "Екстра"
 
-#: ../main_frame.cpp:360
+#: ../main_frame.cpp:365
 msgid "&File"
 msgstr "Файл"
 
@@ -156,7 +163,7 @@ msgstr "Спроба блокування не вдалася"
 msgid "&Get"
 msgstr "Отримати"
 
-#: ../main_frame.cpp:233 ../main_frame.cpp:367
+#: ../main_frame.cpp:238 ../main_frame.cpp:372
 msgid "&Help"
 msgstr "Допомога"
 
@@ -165,11 +172,11 @@ msgstr "Допомога"
 msgid "&Ignore\tCTRL-DEL"
 msgstr "Експорт...\tCTRL-E"
 
-#: ../main_frame.cpp:297
+#: ../main_frame.cpp:302
 msgid "&Import...\tCTRL-I"
 msgstr "Імпорт...\tCTRL-I"
 
-#: ../main_frame.cpp:328
+#: ../main_frame.cpp:333
 msgid "&Index\tShift+F1"
 msgstr "Індекс\tShift+F1"
 
@@ -199,7 +206,7 @@ msgstr "Журнал...\tCTRL-L"
 msgid "&Merge"
 msgstr "Об'єднати"
 
-#: ../main_frame.cpp:363
+#: ../main_frame.cpp:368
 msgid "&Modify"
 msgstr "Операції"
 
@@ -230,7 +237,7 @@ msgstr "Постійно"
 msgid "&Properties...\tCTRL-P"
 msgstr "Властивості...\tCTRL-P"
 
-#: ../main_frame.cpp:364
+#: ../main_frame.cpp:369
 msgid "&Query"
 msgstr "Запити"
 
@@ -244,7 +251,7 @@ msgstr "Нещодавні записи:"
 msgid "&Remove Bookmark"
 msgstr "Видалити закладку..."
 
-#: ../main_frame.cpp:362
+#: ../main_frame.cpp:367
 msgid "&Repository"
 msgstr "Репозиторій"
 
@@ -264,7 +271,7 @@ msgstr "Перемкнути URL репозиторію..."
 msgid "&Temporarily"
 msgstr "Тимчасово"
 
-#: ../main_frame.cpp:369
+#: ../main_frame.cpp:374
 msgid "&Tests"
 msgstr "Тести"
 
@@ -294,7 +301,7 @@ msgstr "Перейменування"
 msgid "&Value"
 msgstr "Значення"
 
-#: ../main_frame.cpp:361 ../rapidsvn_generated.cpp:1356
+#: ../main_frame.cpp:366 ../rapidsvn_generated.cpp:1356
 msgid "&View"
 msgstr "Вигляд"
 
@@ -368,7 +375,7 @@ msgid "Action"
 msgstr "Аутентифікація"
 
 #: ../add_action.cpp:37 ../add_recursive_action.cpp:37 ../listed_dlg.cpp:183
-#: ../main_frame.cpp:1434
+#: ../main_frame.cpp:1441
 msgid "Add"
 msgstr "Додати"
 
@@ -392,16 +399,16 @@ msgstr "Додати вибране"
 msgid "Add to bookmarks"
 msgstr "Додати до закладок"
 
-#: ../listener.cpp:309 ../main_frame.cpp:1443 ../main_frame.cpp:1450
+#: ../listener.cpp:309 ../main_frame.cpp:1450 ../main_frame.cpp:1457
 msgid "Added"
 msgstr "Додано"
 
-#: ../main_frame.cpp:2219
+#: ../main_frame.cpp:2227
 #, c-format
 msgid "Added repository to bookmarks '%s'"
 msgstr "Репозиторій '%s' додано до закладок"
 
-#: ../main_frame.cpp:2189
+#: ../main_frame.cpp:2197
 #, c-format
 msgid "Added working copy to bookmarks '%s'"
 msgstr "Робочу копію '%s' додано до закладок"
@@ -429,11 +436,11 @@ msgid ""
 "Also clean up any external items that are located below the selected path."
 msgstr ""
 
-#: ../main_frame.cpp:1308 ../main_frame.cpp:1327
+#: ../main_frame.cpp:1315 ../main_frame.cpp:1334
 msgid "An error occured while launching the browser"
 msgstr ""
 
-#: ../main_frame.cpp:1295
+#: ../main_frame.cpp:1302
 msgid "An error occurred while checking valid actions"
 msgstr ""
 
@@ -476,11 +483,11 @@ msgstr "BASE"
 msgid "BerkeleyDB"
 msgstr ""
 
-#: ../main_frame.cpp:2256
+#: ../main_frame.cpp:2264
 msgid "Bookmark"
 msgstr "Закладка"
 
-#: ../folder_browser.cpp:177
+#: ../folder_browser.cpp:179
 msgid "Bookmarks"
 msgstr "Закладки"
 
@@ -540,7 +547,7 @@ msgstr "Скасувати"
 msgid "Certificate information:"
 msgstr "Інформація про сертифікат:"
 
-#: ../main_frame.cpp:299
+#: ../main_frame.cpp:304
 msgid "Check&out...\tCTRL-O"
 msgstr "Створити локальну копію (check&out)...\tCTRL-O"
 
@@ -609,7 +616,7 @@ msgstr "Закрити"
 msgid "Co&mmit...\tCTRL-ENTER"
 msgstr "Фіксувати зміни (co&mmit)...\tCTRL-M"
 
-#: ../main_frame.cpp:275
+#: ../main_frame.cpp:280
 msgid "Columns"
 msgstr "Стовпці"
 
@@ -708,7 +715,7 @@ msgstr "Скопійовано з URL: %s"
 msgid "Copied from Rev"
 msgstr "Скопійовано з ревізії: %ld"
 
-#: ../dnd_dlg.cpp:72 ../main_frame.cpp:1435 ../move_action.cpp:44
+#: ../dnd_dlg.cpp:72 ../main_frame.cpp:1442 ../move_action.cpp:44
 #: ../rapidsvn_generated.cpp:1004
 msgid "Copy"
 msgstr "Копіювати"
@@ -769,7 +776,7 @@ msgstr "Дата:"
 msgid "Default"
 msgstr "Видалення"
 
-#: ../delete_action.cpp:40 ../main_frame.cpp:1436
+#: ../delete_action.cpp:40 ../main_frame.cpp:1443
 #: ../../include/rapidsvn_generated.h:339
 msgid "Delete"
 msgstr "Видалення"
@@ -802,7 +809,7 @@ msgstr "Винести файли та каталоги з-під контрол
 msgid "Delete selected"
 msgstr "Видалити вибране"
 
-#: ../listener.cpp:310 ../main_frame.cpp:1442 ../main_frame.cpp:1451
+#: ../listener.cpp:310 ../main_frame.cpp:1449 ../main_frame.cpp:1458
 msgid "Deleted"
 msgstr "Видалено"
 
@@ -911,7 +918,7 @@ msgstr "Вихід\tCTRL-Q"
 msgid "Edit"
 msgstr "Редагування"
 
-#: ../main_frame.cpp:2256
+#: ../main_frame.cpp:2264
 msgid "Edit Bookmark"
 msgstr "Редагувати закладку"
 
@@ -959,8 +966,8 @@ msgstr "Введіть шлях, де Ви бажаєте створити ло�
 msgid "Enter the repository URL (not local path) here."
 msgstr "Введіть тут URL репозиторію (не локальний шлях)."
 
-#: ../main_frame.cpp:562 ../main_frame.cpp:1290 ../main_frame.cpp:1295
-#: ../main_frame.cpp:1308 ../main_frame.cpp:1327 ../main_frame.cpp:2179
+#: ../main_frame.cpp:567 ../main_frame.cpp:1297 ../main_frame.cpp:1302
+#: ../main_frame.cpp:1315 ../main_frame.cpp:1334 ../main_frame.cpp:2187
 #: ../property_dlg.cpp:138
 msgid "Error"
 msgstr "Помилка"
@@ -1007,21 +1014,21 @@ msgstr "Помилка під час підготовки до виконанн�
 msgid "Error while preparing action: %s"
 msgstr "Помилка під час підготовки до виконання операції: %s"
 
-#: ../folder_browser.cpp:534
+#: ../folder_browser.cpp:536
 #, c-format
 msgid "Error while refreshing filelist (%s)"
 msgstr "Помилка під час оновлення переліку файлів (%s)"
 
-#: ../main_frame.cpp:944
+#: ../main_frame.cpp:949
 msgid "Error while updating filelist"
 msgstr "Помилка під час оновлення переліку файлів"
 
-#: ../main_frame.cpp:931
+#: ../main_frame.cpp:936
 #, c-format
 msgid "Error while updating filelist (%s)"
 msgstr "Помилка під час оновлення переліку файлів (%s)"
 
-#: ../main_frame.cpp:2049
+#: ../main_frame.cpp:2057
 msgid "Exception occured during filelist update"
 msgstr "Виявлена виняткова ситуація під час оновлення переліку файлів"
 
@@ -1079,11 +1086,11 @@ msgstr "Розширення"
 msgid "FSFS"
 msgstr ""
 
-#: ../main_frame.cpp:1457
+#: ../main_frame.cpp:1464
 msgid "Failed to lock"
 msgstr "Спроба блокування не вдалася"
 
-#: ../main_frame.cpp:1458
+#: ../main_frame.cpp:1465
 msgid "Failed to unlock"
 msgstr "Спроба розблокування не вдалася"
 
@@ -1192,7 +1199,7 @@ msgstr ""
 msgid "Ignore"
 msgstr "Інформація"
 
-#: ../main_frame.cpp:285
+#: ../main_frame.cpp:290
 msgid "Ignore Externals"
 msgstr "Ігнорувати зовнішні залежності"
 
@@ -1232,11 +1239,11 @@ msgstr "Властивості...\tCTRL-P"
 msgid "Include externals"
 msgstr "Ігнорувати зовнішні залежності"
 
-#: ../main_frame.cpp:280
+#: ../main_frame.cpp:285
 msgid "Indicate modified children"
 msgstr ""
 
-#: ../main_frame.cpp:2299
+#: ../main_frame.cpp:2307
 msgid "Info"
 msgstr "Інформація"
 
@@ -1248,7 +1255,7 @@ msgstr "Інформація про файл"
 msgid "Internal Error: There is another action running"
 msgstr "Внутрішня помилка: зараз виконується інша операція"
 
-#: ../main_frame.cpp:1759
+#: ../main_frame.cpp:1766
 msgid "Internal Error: no client data for action event!"
 msgstr "Внутрішня помилка: відсутні дані клієнта для операції!"
 
@@ -1300,7 +1307,7 @@ msgstr ""
 msgid "ListEditor"
 msgstr ""
 
-#: ../filelist_ctrl.cpp:1064
+#: ../filelist_ctrl.cpp:1069
 #, c-format
 msgid "Listing entries in '%s'"
 msgstr "Відображається зміст '%s'"
@@ -1366,7 +1373,7 @@ msgstr "Власник блокування: %s"
 msgid "Lock Token: %s"
 msgstr "Ключ блокування: %s"
 
-#: ../main_frame.cpp:1455
+#: ../main_frame.cpp:1462
 msgid "Locked"
 msgstr "Заблоковано"
 
@@ -1390,11 +1397,11 @@ msgstr "Журнал файлу"
 msgid "Login..."
 msgstr "Вхід (login)..."
 
-#: ../folder_browser.cpp:338
+#: ../folder_browser.cpp:340
 msgid "Logout"
 msgstr "Вихід (logout)"
 
-#: ../folder_browser.cpp:343
+#: ../folder_browser.cpp:345
 #, c-format
 msgid "Logout '%s'"
 msgstr "Вихід '%s'"
@@ -1428,7 +1435,7 @@ msgstr "Об'єднати"
 msgid "Merge revisions"
 msgstr "Об'єднати ревізії"
 
-#: ../main_frame.cpp:304
+#: ../main_frame.cpp:309
 msgid "Merge..."
 msgstr "Об'єднати..."
 
@@ -1446,7 +1453,7 @@ msgstr "Повідомлення журналу"
 msgid "Mkdir"
 msgstr "Створення каталога"
 
-#: ../main_frame.cpp:1449
+#: ../main_frame.cpp:1456
 msgid "Modified"
 msgstr "Змінено"
 
@@ -1658,7 +1665,7 @@ msgstr "Занести файли та каталоги під контроль 
 msgid "Question"
 msgstr ""
 
-#: ../main_frame.cpp:530
+#: ../main_frame.cpp:535
 msgid "RapidSVN Error"
 msgstr ""
 
@@ -1679,11 +1686,11 @@ msgstr "Вирішити конфлікти\tCTRL-S"
 msgid "Re&vert\tCTRL-V"
 msgstr "Скасування локальних змін\tCTRL-V"
 
-#: ../filelist_ctrl.cpp:1143
+#: ../filelist_ctrl.cpp:1150
 msgid "Ready"
 msgstr "Готово"
 
-#: ../main_frame.cpp:1739 ../main_frame.cpp:1783
+#: ../main_frame.cpp:1746 ../main_frame.cpp:1790
 msgid "Ready\n"
 msgstr "Готово\n"
 
@@ -1709,7 +1716,7 @@ msgstr "Оновити зображення\tCTRL-R"
 msgid "Refresh the file list"
 msgstr "Оновити перелік файлів"
 
-#: ../main_frame.cpp:278
+#: ../main_frame.cpp:283
 msgid "Refresh with Update"
 msgstr "Оновлювати повністю"
 
@@ -1728,7 +1735,7 @@ msgid ""
 "unfinished operations."
 msgstr ""
 
-#: ../main_frame.cpp:2233
+#: ../main_frame.cpp:2241
 msgid "Removed bookmark"
 msgstr "Закладку видалено"
 
@@ -1740,7 +1747,7 @@ msgstr "Перейменування"
 msgid "Rep. Rev."
 msgstr "Рев. реп."
 
-#: ../main_frame.cpp:1452
+#: ../main_frame.cpp:1459
 msgid "Replaced"
 msgstr "Замінено"
 
@@ -1758,7 +1765,7 @@ msgstr "Репозиторій"
 msgid "Repository &URL for import"
 msgstr "Для імпорту необхідний URL репозиторію!"
 
-#: ../main_frame.cpp:2205
+#: ../main_frame.cpp:2213
 msgid "Repository URL"
 msgstr "URL репозиторію"
 
@@ -1788,11 +1795,11 @@ msgstr "Вирішення конфліктів"
 msgid "Resolve selected"
 msgstr "Вирішити конфлікти"
 
-#: ../main_frame.cpp:1440
+#: ../main_frame.cpp:1447
 msgid "Resolved"
 msgstr "Конфлікт вирішено"
 
-#: ../main_frame.cpp:1437
+#: ../main_frame.cpp:1444
 msgid "Restore"
 msgstr "Відновити"
 
@@ -1804,7 +1811,7 @@ msgstr "Відновити початкову робочу копію файла
 msgid "Resulting repository filename:"
 msgstr ""
 
-#: ../main_frame.cpp:1438 ../revert_action.cpp:35
+#: ../main_frame.cpp:1445 ../revert_action.cpp:38
 #: ../../include/rapidsvn_generated.h:857
 msgid "Revert"
 msgstr "Скасування змін"
@@ -1869,7 +1876,7 @@ msgid "Select a destination folder to merge to"
 msgstr "Вкажіть цільовий каталог для об'єднання"
 
 #: ../create_repos_dlg.cpp:185 ../create_repos_dlg.cpp:201
-#: ../main_frame.cpp:2159
+#: ../main_frame.cpp:2167
 msgid "Select a directory"
 msgstr "Вкажіть каталог"
 
@@ -1945,7 +1952,7 @@ msgstr ""
 "Встановіть для ігнорування зовнішніх означень та ними керованих зовнішніх "
 "робочих копій."
 
-#: ../main_frame.cpp:331
+#: ../main_frame.cpp:336
 msgid "Show Startup Tips"
 msgstr "Показувати корисні підказки на старті"
 
@@ -1958,7 +1965,7 @@ msgstr "Показувати невідстежувані файли"
 msgid "Show added files in the log list"
 msgstr ""
 
-#: ../main_frame.cpp:284 ../main_frame_helper.cpp:180
+#: ../main_frame.cpp:289 ../main_frame_helper.cpp:180
 #, fuzzy
 msgid "Show conflicted entries"
 msgstr "Показувати невідстежувані файли"
@@ -1987,17 +1994,17 @@ msgstr ""
 msgid "Show entries in subdirectories"
 msgstr "Показувати невідстежувані файли"
 
-#: ../main_frame.cpp:286
+#: ../main_frame.cpp:291
 #, fuzzy
 msgid "Show ignored entries"
 msgstr "Показувати невідстежувані файли"
 
-#: ../main_frame.cpp:283 ../main_frame_helper.cpp:174
+#: ../main_frame.cpp:288 ../main_frame_helper.cpp:174
 #, fuzzy
 msgid "Show modified entries"
 msgstr "Показувати невідстежувані файли"
 
-#: ../main_frame.cpp:279 ../main_frame_helper.cpp:156
+#: ../main_frame.cpp:284 ../main_frame_helper.cpp:156
 #, fuzzy
 msgid "Show subdirectories"
 msgstr "Показувати невідстежувані файли"
@@ -2006,12 +2013,12 @@ msgstr "Показувати невідстежувані файли"
 msgid "Show the log messages for the selected entries"
 msgstr "Показати повідомлення журналу для вибраних файлів"
 
-#: ../main_frame.cpp:282 ../main_frame_helper.cpp:168
+#: ../main_frame.cpp:287 ../main_frame_helper.cpp:168
 #, fuzzy
 msgid "Show unmodified entries"
 msgstr "Показувати невідстежувані файли"
 
-#: ../main_frame.cpp:281 ../main_frame_helper.cpp:162
+#: ../main_frame.cpp:286 ../main_frame_helper.cpp:162
 msgid "Show unversioned entries"
 msgstr "Показувати невідстежувані файли"
 
@@ -2024,15 +2031,15 @@ msgstr "Показувати невідстежувані файли"
 msgid "Show updated files in the log list"
 msgstr ""
 
-#: ../main_frame.cpp:1441
+#: ../main_frame.cpp:1448
 msgid "Skip"
 msgstr "Пропуск"
 
-#: ../main_frame.cpp:276
+#: ../main_frame.cpp:281
 msgid "Sort"
 msgstr "Сортування"
 
-#: ../main_frame.cpp:252
+#: ../main_frame.cpp:257
 msgid "Sort Ascending"
 msgstr "за зростанням"
 
@@ -2070,19 +2077,19 @@ msgstr "Зберігати аутентифікаційне посвідченн
 msgid "Switch URL"
 msgstr "Перемикання URL"
 
-#: ../main_frame.cpp:305
+#: ../main_frame.cpp:310
 msgid "Switch URL...\tCTRL-S"
 msgstr "Перемкнути URL...\tCTRL-S"
 
-#: ../main_frame.cpp:1388
+#: ../main_frame.cpp:1395
 msgid "Test duration"
 msgstr "Тривалість тесту"
 
-#: ../main_frame.cpp:1384
+#: ../main_frame.cpp:1391
 msgid "Test ended at"
 msgstr "Тест закінчено о"
 
-#: ../main_frame.cpp:1381
+#: ../main_frame.cpp:1388
 msgid "Test started at"
 msgstr "Тест розпочато о"
 
@@ -2146,7 +2153,7 @@ msgstr "UUID"
 msgid "Unicode"
 msgstr "Unicode"
 
-#: ../main_frame.cpp:1701
+#: ../main_frame.cpp:1708
 msgid "Unimplemented action!"
 msgstr "Непідтримувана операція!"
 
@@ -2159,7 +2166,7 @@ msgstr "Цільовий шлях"
 msgid "Unlock"
 msgstr "Розблокування"
 
-#: ../main_frame.cpp:1456
+#: ../main_frame.cpp:1463
 msgid "Unlocked"
 msgstr "Розблоковано"
 
@@ -2176,11 +2183,11 @@ msgstr "Оновити вибране повністю"
 msgid "Update selected"
 msgstr "Оновити вибране повністю"
 
-#: ../listener.cpp:311 ../main_frame.cpp:1444
+#: ../listener.cpp:311 ../main_frame.cpp:1451
 msgid "Updated"
 msgstr "Оновлено"
 
-#: ../main_frame.cpp:1773 ../main_frame.cpp:1778
+#: ../main_frame.cpp:1780 ../main_frame.cpp:1785
 #, fuzzy
 msgid "Updating file list..."
 msgstr "Оновлення..."
@@ -2193,7 +2200,7 @@ msgstr ""
 msgid "Upgrade Working Copy"
 msgstr ""
 
-#: ../main_frame.cpp:251
+#: ../main_frame.cpp:256
 msgid "Use Path for Sorting"
 msgstr "Використовувати шлях"
 
@@ -2288,15 +2295,15 @@ msgid ""
 "  %s?"
 msgstr ""
 
-#: ../main_frame.cpp:2177
+#: ../main_frame.cpp:2185
 msgid "You cannot add a subversion administrative directory to the bookmarks!"
 msgstr "Не можна додати до закладок адміністративний каталог subversion!"
 
-#: ../file_info.cpp:150 ../filelist_ctrl.cpp:1273
+#: ../file_info.cpp:150 ../filelist_ctrl.cpp:1297
 msgid "add"
 msgstr "додати"
 
-#: ../filelist_ctrl.cpp:1235 ../utils.cpp:415
+#: ../filelist_ctrl.cpp:1259 ../utils.cpp:415
 msgid "added"
 msgstr "доданий"
 
@@ -2304,7 +2311,7 @@ msgstr "доданий"
 msgid "conflicted"
 msgstr "конфліктує"
 
-#: ../file_info.cpp:154 ../filelist_ctrl.cpp:1276
+#: ../file_info.cpp:154 ../filelist_ctrl.cpp:1300
 msgid "delete"
 msgstr "видалити"
 
@@ -2315,6 +2322,10 @@ msgstr "видалений"
 #: ../file_info.cpp:126
 msgid "directory"
 msgstr "каталог"
+
+#: ../filelist_ctrl.cpp:1342
+msgid "element(s) modified"
+msgstr ""
 
 #: ../utils.cpp:439
 msgid "external"
@@ -2340,7 +2351,7 @@ msgstr "об'єднаний"
 msgid "missing"
 msgstr "відсутній"
 
-#: ../filelist_ctrl.cpp:1238 ../utils.cpp:427
+#: ../filelist_ctrl.cpp:1262 ../utils.cpp:427
 msgid "modified"
 msgstr "змінений"
 
@@ -2364,7 +2375,7 @@ msgstr "нормальний"
 msgid "obstructed"
 msgstr "затуляє інший файл"
 
-#: ../filelist_ctrl.cpp:1306 ../filelist_ctrl.cpp:1320
+#: ../filelist_ctrl.cpp:1330 ../filelist_ctrl.cpp:1351
 msgid "outdated"
 msgstr "застарів"
 
@@ -2383,7 +2394,7 @@ msgstr "Subversion %d.%d.%d"
 msgid "pre Subversion 1.6"
 msgstr "Subversion %d.%d.%d"
 
-#: ../file_info.cpp:158 ../filelist_ctrl.cpp:1279
+#: ../file_info.cpp:158 ../filelist_ctrl.cpp:1303
 msgid "replace"
 msgstr "замінити"
 

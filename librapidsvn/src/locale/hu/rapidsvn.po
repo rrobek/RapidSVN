@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rapidsvn 0.12.0 v02\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-24 09:28+0200\n"
+"POT-Creation-Date: 2020-06-14 22:09+0200\n"
 "PO-Revision-Date: 2010-06-19 11:16+0100\n"
 "Last-Translator: csola48 <csola48@gmail.com>\n"
 "Language-Team: magyar <csola48@gmail.com>\n"
@@ -19,6 +19,13 @@ msgstr ""
 "X-Poedit-Language: Hungarian\n"
 "X-Poedit-Country: HUNGARY\n"
 "X-Poedit-SourceCharset: utf-8\n"
+
+#: ../filelist_ctrl.cpp:1340
+#, c-format
+msgid "%d element modified"
+msgid_plural "%d elements modified"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../exceptions.cpp:55
 #, c-format
@@ -45,7 +52,7 @@ msgstr "Revízió beküldve"
 msgid "%x %X"
 msgstr "%x %X"
 
-#: ../main_frame.cpp:334
+#: ../main_frame.cpp:339
 msgid "&About..."
 msgstr "&Névjegy..."
 
@@ -65,7 +72,7 @@ msgstr "&Jegyzetek"
 msgid "&Annotate..."
 msgstr "&Jegyzetek..."
 
-#: ../main_frame.cpp:365
+#: ../main_frame.cpp:370
 msgid "&Bookmarks"
 msgstr "&Könyvjelzők"
 
@@ -78,7 +85,7 @@ msgstr "Böngészik"
 msgid "&Compatible with:"
 msgstr ""
 
-#: ../main_frame.cpp:327
+#: ../main_frame.cpp:332
 msgid "&Contents\tF1"
 msgstr "&Tartalom\tF1"
 
@@ -86,7 +93,7 @@ msgstr "&Tartalom\tF1"
 msgid "&Copy...\tF5"
 msgstr "Más&olás...\tF5"
 
-#: ../main_frame.cpp:300
+#: ../main_frame.cpp:305
 msgid "&Create..."
 msgstr "&Létrehoz..."
 
@@ -136,15 +143,15 @@ msgstr "Sz&erkeszt..."
 msgid "&Edit...\tF3"
 msgstr "&Szerkesztés...\tF3"
 
-#: ../main_frame.cpp:298
+#: ../main_frame.cpp:303
 msgid "&Export...\tCTRL-E"
 msgstr "&Export...\tCTRL-E"
 
-#: ../main_frame.cpp:366
+#: ../main_frame.cpp:371
 msgid "&Extras"
 msgstr "&Extrák"
 
-#: ../main_frame.cpp:360
+#: ../main_frame.cpp:365
 msgid "&File"
 msgstr "&Fájl"
 
@@ -156,7 +163,7 @@ msgstr "&Fájlok beküldése"
 msgid "&Get"
 msgstr "&Rajta"
 
-#: ../main_frame.cpp:233 ../main_frame.cpp:367
+#: ../main_frame.cpp:238 ../main_frame.cpp:372
 msgid "&Help"
 msgstr "&Súgó"
 
@@ -164,11 +171,11 @@ msgstr "&Súgó"
 msgid "&Ignore\tCTRL-DEL"
 msgstr "&Mellőz\tCTRL-DEL"
 
-#: ../main_frame.cpp:297
+#: ../main_frame.cpp:302
 msgid "&Import...\tCTRL-I"
 msgstr "&Import...\tCTRL-I"
 
-#: ../main_frame.cpp:328
+#: ../main_frame.cpp:333
 msgid "&Index\tShift+F1"
 msgstr "&Index\tShift+F1"
 
@@ -197,7 +204,7 @@ msgstr "&Napló...\tCTRL-L"
 msgid "&Merge"
 msgstr "Össze&fűzés"
 
-#: ../main_frame.cpp:363
+#: ../main_frame.cpp:368
 msgid "&Modify"
 msgstr "&Módosít"
 
@@ -228,7 +235,7 @@ msgstr "&Állandó"
 msgid "&Properties...\tCTRL-P"
 msgstr "&Tulajdonságok...\tCTRL-P"
 
-#: ../main_frame.cpp:364
+#: ../main_frame.cpp:369
 msgid "&Query"
 msgstr "&Lekérdezés"
 
@@ -240,7 +247,7 @@ msgstr "&Jelen bejegyzések:"
 msgid "&Remove Bookmark"
 msgstr "Könyvjelző &eltávolítása"
 
-#: ../main_frame.cpp:362
+#: ../main_frame.cpp:367
 msgid "&Repository"
 msgstr "&Tároló"
 
@@ -261,7 +268,7 @@ msgstr "Tároló &URL kapcsolása..."
 msgid "&Temporarily"
 msgstr "&Ideiglenes"
 
-#: ../main_frame.cpp:369
+#: ../main_frame.cpp:374
 msgid "&Tests"
 msgstr "&Próbák"
 
@@ -291,7 +298,7 @@ msgstr "Átnevezés"
 msgid "&Value"
 msgstr "Érték"
 
-#: ../main_frame.cpp:361 ../rapidsvn_generated.cpp:1356
+#: ../main_frame.cpp:366 ../rapidsvn_generated.cpp:1356
 msgid "&View"
 msgstr "&Nézet"
 
@@ -364,7 +371,7 @@ msgid "Action"
 msgstr "Akció"
 
 #: ../add_action.cpp:37 ../add_recursive_action.cpp:37 ../listed_dlg.cpp:183
-#: ../main_frame.cpp:1434
+#: ../main_frame.cpp:1441
 msgid "Add"
 msgstr "Hozzáadás"
 
@@ -388,16 +395,16 @@ msgstr "Kiválasztott hozzáadása"
 msgid "Add to bookmarks"
 msgstr "Hozzáadás könyvjelzőhöz"
 
-#: ../listener.cpp:309 ../main_frame.cpp:1443 ../main_frame.cpp:1450
+#: ../listener.cpp:309 ../main_frame.cpp:1450 ../main_frame.cpp:1457
 msgid "Added"
 msgstr "Hozzáadva"
 
-#: ../main_frame.cpp:2219
+#: ../main_frame.cpp:2227
 #, c-format
 msgid "Added repository to bookmarks '%s'"
 msgstr "Tároló hozzáadása a könyvjelzőhöz '%s'"
 
-#: ../main_frame.cpp:2189
+#: ../main_frame.cpp:2197
 #, c-format
 msgid "Added working copy to bookmarks '%s'"
 msgstr "Munkakópia hozzáadása a könyvjelzőhöz '%s'"
@@ -425,11 +432,11 @@ msgid ""
 "Also clean up any external items that are located below the selected path."
 msgstr ""
 
-#: ../main_frame.cpp:1308 ../main_frame.cpp:1327
+#: ../main_frame.cpp:1315 ../main_frame.cpp:1334
 msgid "An error occured while launching the browser"
 msgstr "Hiba a böngésző indulásakor"
 
-#: ../main_frame.cpp:1295
+#: ../main_frame.cpp:1302
 msgid "An error occurred while checking valid actions"
 msgstr "Hiba az érvényesség ellenőrzésekor"
 
@@ -478,11 +485,11 @@ msgstr "BASE"
 msgid "BerkeleyDB"
 msgstr ""
 
-#: ../main_frame.cpp:2256
+#: ../main_frame.cpp:2264
 msgid "Bookmark"
 msgstr "Könyvjelző"
 
-#: ../folder_browser.cpp:177
+#: ../folder_browser.cpp:179
 msgid "Bookmarks"
 msgstr "Könyvjelzők"
 
@@ -542,7 +549,7 @@ msgstr "Mégsem"
 msgid "Certificate information:"
 msgstr "Tanúsítvány információk:"
 
-#: ../main_frame.cpp:299
+#: ../main_frame.cpp:304
 msgid "Check&out...\tCTRL-O"
 msgstr "Elle&nőrzés...\tCTRL-O"
 
@@ -610,7 +617,7 @@ msgstr "&Bezár"
 msgid "Co&mmit...\tCTRL-ENTER"
 msgstr "&Beküldés...\tCTRL-ENTER"
 
-#: ../main_frame.cpp:275
+#: ../main_frame.cpp:280
 msgid "Columns"
 msgstr "Oszlop"
 
@@ -707,7 +714,7 @@ msgstr "Másolva az útvonalból"
 msgid "Copied from Rev"
 msgstr "Másolva a revízióból"
 
-#: ../dnd_dlg.cpp:72 ../main_frame.cpp:1435 ../move_action.cpp:44
+#: ../dnd_dlg.cpp:72 ../main_frame.cpp:1442 ../move_action.cpp:44
 #: ../rapidsvn_generated.cpp:1004
 msgid "Copy"
 msgstr "Másolás"
@@ -766,7 +773,7 @@ msgstr "Dátum:"
 msgid "Default"
 msgstr ""
 
-#: ../delete_action.cpp:40 ../main_frame.cpp:1436
+#: ../delete_action.cpp:40 ../main_frame.cpp:1443
 #: ../../include/rapidsvn_generated.h:339
 msgid "Delete"
 msgstr "Törlés"
@@ -798,7 +805,7 @@ msgstr "Fájlok és könyvtárak törlése a verzió kontrollból"
 msgid "Delete selected"
 msgstr "Kiválasztottak törlése"
 
-#: ../listener.cpp:310 ../main_frame.cpp:1442 ../main_frame.cpp:1451
+#: ../listener.cpp:310 ../main_frame.cpp:1449 ../main_frame.cpp:1458
 msgid "Deleted"
 msgstr "Törölt"
 
@@ -904,7 +911,7 @@ msgstr "&Kilépés\tCTRL-Q"
 msgid "Edit"
 msgstr "Szerkesztés"
 
-#: ../main_frame.cpp:2256
+#: ../main_frame.cpp:2264
 msgid "Edit Bookmark"
 msgstr "Könyvjelző szerkesztése"
 
@@ -951,8 +958,8 @@ msgstr "Adja meg a helyi útvonalat, ahol akarja a kódot ellenőrizni."
 msgid "Enter the repository URL (not local path) here."
 msgstr "Adja meg a tároló URL-jét (nem helyi útvonal)."
 
-#: ../main_frame.cpp:562 ../main_frame.cpp:1290 ../main_frame.cpp:1295
-#: ../main_frame.cpp:1308 ../main_frame.cpp:1327 ../main_frame.cpp:2179
+#: ../main_frame.cpp:567 ../main_frame.cpp:1297 ../main_frame.cpp:1302
+#: ../main_frame.cpp:1315 ../main_frame.cpp:1334 ../main_frame.cpp:2187
 #: ../property_dlg.cpp:138
 msgid "Error"
 msgstr "Hiba"
@@ -999,21 +1006,21 @@ msgstr "Hiba az előkészített akció közben."
 msgid "Error while preparing action: %s"
 msgstr "Hiba az előkészített akció közben: %s"
 
-#: ../folder_browser.cpp:534
+#: ../folder_browser.cpp:536
 #, c-format
 msgid "Error while refreshing filelist (%s)"
 msgstr "Hiba a fájllista frissítése közben (%s)"
 
-#: ../main_frame.cpp:944
+#: ../main_frame.cpp:949
 msgid "Error while updating filelist"
 msgstr "Hiba a fájllista frissítése közben"
 
-#: ../main_frame.cpp:931
+#: ../main_frame.cpp:936
 #, c-format
 msgid "Error while updating filelist (%s)"
 msgstr "Hiba a fájllista frissítése közben (%s)"
 
-#: ../main_frame.cpp:2049
+#: ../main_frame.cpp:2057
 msgid "Exception occured during filelist update"
 msgstr "Kivétel következett be a fájllista frissítése közben"
 
@@ -1071,11 +1078,11 @@ msgstr "Kiterjesztés"
 msgid "FSFS"
 msgstr ""
 
-#: ../main_frame.cpp:1457
+#: ../main_frame.cpp:1464
 msgid "Failed to lock"
 msgstr "Sikertelen zárás"
 
-#: ../main_frame.cpp:1458
+#: ../main_frame.cpp:1465
 msgid "Failed to unlock"
 msgstr "Sikertelen nyitás"
 
@@ -1185,7 +1192,7 @@ msgstr ""
 msgid "Ignore"
 msgstr "Mellőz"
 
-#: ../main_frame.cpp:285
+#: ../main_frame.cpp:290
 msgid "Ignore Externals"
 msgstr "Külsők kihagyása"
 
@@ -1224,11 +1231,11 @@ msgstr "Interaktív &döntés...\tCTRL-T"
 msgid "Include externals"
 msgstr "Külsők kihagyása"
 
-#: ../main_frame.cpp:280
+#: ../main_frame.cpp:285
 msgid "Indicate modified children"
 msgstr "Módosított következmények jelzése"
 
-#: ../main_frame.cpp:2299
+#: ../main_frame.cpp:2307
 msgid "Info"
 msgstr "Információ"
 
@@ -1240,7 +1247,7 @@ msgstr "Információ kiválasztása"
 msgid "Internal Error: There is another action running"
 msgstr "Belső hiba: egy másik akció is fut"
 
-#: ../main_frame.cpp:1759
+#: ../main_frame.cpp:1766
 msgid "Internal Error: no client data for action event!"
 msgstr "Belső hiba: nincs kliens adat az akcióhoz megadva!"
 
@@ -1291,7 +1298,7 @@ msgstr "Sor"
 msgid "ListEditor"
 msgstr ""
 
-#: ../filelist_ctrl.cpp:1064
+#: ../filelist_ctrl.cpp:1069
 #, c-format
 msgid "Listing entries in '%s'"
 msgstr "Bejegyzések listázása '%s'"
@@ -1357,7 +1364,7 @@ msgstr "Zárolt tulajdonos: %s"
 msgid "Lock Token: %s"
 msgstr "Zárolt token: %s"
 
-#: ../main_frame.cpp:1455
+#: ../main_frame.cpp:1462
 msgid "Locked"
 msgstr "Zárolt"
 
@@ -1381,11 +1388,11 @@ msgstr "Napló választás"
 msgid "Login..."
 msgstr "Bejelentkezés..."
 
-#: ../folder_browser.cpp:338
+#: ../folder_browser.cpp:340
 msgid "Logout"
 msgstr "Kijelentkezés"
 
-#: ../folder_browser.cpp:343
+#: ../folder_browser.cpp:345
 #, c-format
 msgid "Logout '%s'"
 msgstr "Kijelentkezés '%s'"
@@ -1418,7 +1425,7 @@ msgstr "Összefűzés eszközök"
 msgid "Merge revisions"
 msgstr "Összefűzés átdolgozások"
 
-#: ../main_frame.cpp:304
+#: ../main_frame.cpp:309
 msgid "Merge..."
 msgstr "Összefűzés..."
 
@@ -1436,7 +1443,7 @@ msgstr "Napló bejegyzés"
 msgid "Mkdir"
 msgstr "Mkdir"
 
-#: ../main_frame.cpp:1449
+#: ../main_frame.cpp:1456
 msgid "Modified"
 msgstr "Módosított"
 
@@ -1645,7 +1652,7 @@ msgstr "Helyezze a fájlokat és könyvtárakat revízió ellenőrzés alá"
 msgid "Question"
 msgstr ""
 
-#: ../main_frame.cpp:530
+#: ../main_frame.cpp:535
 msgid "RapidSVN Error"
 msgstr "RapidSVN hiba"
 
@@ -1666,11 +1673,11 @@ msgstr "Döntés &ellentétek\tCTRL-S"
 msgid "Re&vert\tCTRL-V"
 msgstr "&Visszavon\tCTRL-V"
 
-#: ../filelist_ctrl.cpp:1143
+#: ../filelist_ctrl.cpp:1150
 msgid "Ready"
 msgstr "Kész"
 
-#: ../main_frame.cpp:1739 ../main_frame.cpp:1783
+#: ../main_frame.cpp:1746 ../main_frame.cpp:1790
 msgid "Ready\n"
 msgstr "Kész\n"
 
@@ -1696,7 +1703,7 @@ msgstr "Nézet frissítése\tCTRL-R"
 msgid "Refresh the file list"
 msgstr "Fájllista frissítése"
 
-#: ../main_frame.cpp:278
+#: ../main_frame.cpp:283
 msgid "Refresh with Update"
 msgstr "Frissítés"
 
@@ -1715,7 +1722,7 @@ msgid ""
 "unfinished operations."
 msgstr ""
 
-#: ../main_frame.cpp:2233
+#: ../main_frame.cpp:2241
 msgid "Removed bookmark"
 msgstr "Könyvjelző eltávolítva"
 
@@ -1727,7 +1734,7 @@ msgstr "Átnevezés"
 msgid "Rep. Rev."
 msgstr "Tároló revízió"
 
-#: ../main_frame.cpp:1452
+#: ../main_frame.cpp:1459
 msgid "Replaced"
 msgstr "Cserélt"
 
@@ -1745,7 +1752,7 @@ msgstr "Tároló"
 msgid "Repository &URL for import"
 msgstr "Tároló URL szükséges az importhoz!"
 
-#: ../main_frame.cpp:2205
+#: ../main_frame.cpp:2213
 msgid "Repository URL"
 msgstr "Tároló URL"
 
@@ -1775,11 +1782,11 @@ msgstr "Feloldás"
 msgid "Resolve selected"
 msgstr "Kiválasztás feloldása"
 
-#: ../main_frame.cpp:1440
+#: ../main_frame.cpp:1447
 msgid "Resolved"
 msgstr "Feloldott"
 
-#: ../main_frame.cpp:1437
+#: ../main_frame.cpp:1444
 msgid "Restore"
 msgstr "Visszaállít"
 
@@ -1793,7 +1800,7 @@ msgstr ""
 msgid "Resulting repository filename:"
 msgstr ""
 
-#: ../main_frame.cpp:1438 ../revert_action.cpp:35
+#: ../main_frame.cpp:1445 ../revert_action.cpp:38
 #: ../../include/rapidsvn_generated.h:857
 msgid "Revert"
 msgstr "Visszavon"
@@ -1856,7 +1863,7 @@ msgid "Select a destination folder to merge to"
 msgstr "Válasszon egy célkönyvtárat az összefűzéshez"
 
 #: ../create_repos_dlg.cpp:185 ../create_repos_dlg.cpp:201
-#: ../main_frame.cpp:2159
+#: ../main_frame.cpp:2167
 msgid "Select a directory"
 msgstr "Könyvtár kiválasztása"
 
@@ -1926,7 +1933,7 @@ msgstr ""
 "Mellőzze a külső meghatározásokat és a külső munka másolatok menedzselését "
 "általuk."
 
-#: ../main_frame.cpp:331
+#: ../main_frame.cpp:336
 msgid "Show Startup Tips"
 msgstr "Indulási tippek mutatása"
 
@@ -1939,7 +1946,7 @@ msgstr "Módosított bejegyzések mutatása"
 msgid "Show added files in the log list"
 msgstr ""
 
-#: ../main_frame.cpp:284 ../main_frame_helper.cpp:180
+#: ../main_frame.cpp:289 ../main_frame_helper.cpp:180
 msgid "Show conflicted entries"
 msgstr "Ellentétes bejegyzések mutatása"
 
@@ -1966,15 +1973,15 @@ msgstr ""
 msgid "Show entries in subdirectories"
 msgstr "Alkönyvtárakban lévő bejegyzések mutatása"
 
-#: ../main_frame.cpp:286
+#: ../main_frame.cpp:291
 msgid "Show ignored entries"
 msgstr "Kihagyott bejegyzések mutatása"
 
-#: ../main_frame.cpp:283 ../main_frame_helper.cpp:174
+#: ../main_frame.cpp:288 ../main_frame_helper.cpp:174
 msgid "Show modified entries"
 msgstr "Módosított bejegyzések mutatása"
 
-#: ../main_frame.cpp:279 ../main_frame_helper.cpp:156
+#: ../main_frame.cpp:284 ../main_frame_helper.cpp:156
 msgid "Show subdirectories"
 msgstr "Alkönyvtárak mutatása"
 
@@ -1982,11 +1989,11 @@ msgstr "Alkönyvtárak mutatása"
 msgid "Show the log messages for the selected entries"
 msgstr "Naplójegyzetek mutatása a kiválasztott bejegyzésekhez"
 
-#: ../main_frame.cpp:282 ../main_frame_helper.cpp:168
+#: ../main_frame.cpp:287 ../main_frame_helper.cpp:168
 msgid "Show unmodified entries"
 msgstr "Nem módosított bejegyzések mutatása"
 
-#: ../main_frame.cpp:281 ../main_frame_helper.cpp:162
+#: ../main_frame.cpp:286 ../main_frame_helper.cpp:162
 msgid "Show unversioned entries"
 msgstr "Nem kategorizált bejegyzések mutatása"
 
@@ -1999,15 +2006,15 @@ msgstr "Nem módosított bejegyzések mutatása"
 msgid "Show updated files in the log list"
 msgstr ""
 
-#: ../main_frame.cpp:1441
+#: ../main_frame.cpp:1448
 msgid "Skip"
 msgstr "Átugrás"
 
-#: ../main_frame.cpp:276
+#: ../main_frame.cpp:281
 msgid "Sort"
 msgstr "Rendezés"
 
-#: ../main_frame.cpp:252
+#: ../main_frame.cpp:257
 msgid "Sort Ascending"
 msgstr "Növekvő rendezés"
 
@@ -2043,19 +2050,19 @@ msgstr "Hitelesítések tárolása a merevlemezen."
 msgid "Switch URL"
 msgstr "URL kapcsoló"
 
-#: ../main_frame.cpp:305
+#: ../main_frame.cpp:310
 msgid "Switch URL...\tCTRL-S"
 msgstr "URL kapcsoló...\tCTRL-S"
 
-#: ../main_frame.cpp:1388
+#: ../main_frame.cpp:1395
 msgid "Test duration"
 msgstr "Kipróbálás időtartama"
 
-#: ../main_frame.cpp:1384
+#: ../main_frame.cpp:1391
 msgid "Test ended at"
 msgstr "Kipróbálás vége"
 
-#: ../main_frame.cpp:1381
+#: ../main_frame.cpp:1388
 msgid "Test started at"
 msgstr "Kipróbálás kezdete"
 
@@ -2122,7 +2129,7 @@ msgstr "UUID"
 msgid "Unicode"
 msgstr "Unikód"
 
-#: ../main_frame.cpp:1701
+#: ../main_frame.cpp:1708
 msgid "Unimplemented action!"
 msgstr "Eszköz nélküli akció!"
 
@@ -2134,7 +2141,7 @@ msgstr "Ismeretlen célútvonal"
 msgid "Unlock"
 msgstr "Nyitás"
 
-#: ../main_frame.cpp:1456
+#: ../main_frame.cpp:1463
 msgid "Unlocked"
 msgstr "Kinyitott"
 
@@ -2151,11 +2158,11 @@ msgstr "Kiválasztott frissítése"
 msgid "Update selected"
 msgstr "Kiválasztott frissítése"
 
-#: ../listener.cpp:311 ../main_frame.cpp:1444
+#: ../listener.cpp:311 ../main_frame.cpp:1451
 msgid "Updated"
 msgstr "Frissítve"
 
-#: ../main_frame.cpp:1773 ../main_frame.cpp:1778
+#: ../main_frame.cpp:1780 ../main_frame.cpp:1785
 #, fuzzy
 msgid "Updating file list..."
 msgstr "Frissítés..."
@@ -2168,7 +2175,7 @@ msgstr ""
 msgid "Upgrade Working Copy"
 msgstr ""
 
-#: ../main_frame.cpp:251
+#: ../main_frame.cpp:256
 msgid "Use Path for Sorting"
 msgstr "Útvonal használata rendezéshez"
 
@@ -2278,16 +2285,16 @@ msgstr ""
 "\n"
 "  %s?"
 
-#: ../main_frame.cpp:2177
+#: ../main_frame.cpp:2185
 msgid "You cannot add a subversion administrative directory to the bookmarks!"
 msgstr ""
 "Nem tudta hozzáadni a subversion adminisztrációs könyvtárat a könyvjelzőhöz!"
 
-#: ../file_info.cpp:150 ../filelist_ctrl.cpp:1273
+#: ../file_info.cpp:150 ../filelist_ctrl.cpp:1297
 msgid "add"
 msgstr "hozzáadás"
 
-#: ../filelist_ctrl.cpp:1235 ../utils.cpp:415
+#: ../filelist_ctrl.cpp:1259 ../utils.cpp:415
 msgid "added"
 msgstr "hozzáadva"
 
@@ -2295,7 +2302,7 @@ msgstr "hozzáadva"
 msgid "conflicted"
 msgstr "ellentétes"
 
-#: ../file_info.cpp:154 ../filelist_ctrl.cpp:1276
+#: ../file_info.cpp:154 ../filelist_ctrl.cpp:1300
 msgid "delete"
 msgstr "törlés"
 
@@ -2306,6 +2313,10 @@ msgstr "törölve"
 #: ../file_info.cpp:126
 msgid "directory"
 msgstr "könyvtár"
+
+#: ../filelist_ctrl.cpp:1342
+msgid "element(s) modified"
+msgstr ""
 
 #: ../utils.cpp:439
 msgid "external"
@@ -2331,7 +2342,7 @@ msgstr "összefűzött"
 msgid "missing"
 msgstr "elveszett"
 
-#: ../filelist_ctrl.cpp:1238 ../utils.cpp:427
+#: ../filelist_ctrl.cpp:1262 ../utils.cpp:427
 msgid "modified"
 msgstr "módosított"
 
@@ -2355,7 +2366,7 @@ msgstr "normál"
 msgid "obstructed"
 msgstr "akadályozott"
 
-#: ../filelist_ctrl.cpp:1306 ../filelist_ctrl.cpp:1320
+#: ../filelist_ctrl.cpp:1330 ../filelist_ctrl.cpp:1351
 msgid "outdated"
 msgstr "lejárt"
 
@@ -2371,7 +2382,7 @@ msgstr ""
 msgid "pre Subversion 1.6"
 msgstr ""
 
-#: ../file_info.cpp:158 ../filelist_ctrl.cpp:1279
+#: ../file_info.cpp:158 ../filelist_ctrl.cpp:1303
 msgid "replace"
 msgstr "cserél"
 
