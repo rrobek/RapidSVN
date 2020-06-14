@@ -76,6 +76,7 @@
 ../../librapidsvn/include/merge_data.hpp
 ../../librapidsvn/include/merge_dlg.hpp
 ../../librapidsvn/include/mkdir_action.hpp
+../../librapidsvn/include/modification_mgr.hpp
 ../../librapidsvn/include/move_action.hpp
 ../../librapidsvn/include/preferences.hpp
 ../../librapidsvn/include/preferences_dlg.hpp
@@ -169,6 +170,7 @@
 ../../librapidsvn/src/merge_action.cpp
 ../../librapidsvn/src/merge_dlg.cpp
 ../../librapidsvn/src/mkdir_action.cpp
+../../librapidsvn/src/modification_mgr.cpp
 ../../librapidsvn/src/move_action.cpp
 ../../librapidsvn/src/preferences.cpp
 ../../librapidsvn/src/preferences_dlg.cpp

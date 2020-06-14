@@ -272,7 +272,7 @@ namespace svn
     {
       Data * data = static_cast <Data *>(baton);
       const char* detail = NULL;
-      if(action->err)
+      if (action->err)
         detail = action->err->message;
 
       data->notify(action->path,

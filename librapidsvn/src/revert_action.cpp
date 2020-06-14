@@ -31,8 +31,11 @@
 #include "revert_action.hpp"
 #include "revert_dlg.hpp"
 
+/* Note that a recursive revert action might change the filesystem tree.
+   As we don't know yet what kind of revert we will be, we have to be safe and
+   update the tree in any case. */
 RevertAction::RevertAction(wxWindow * parent)
-  : Action(parent, _("Revert"))
+  : Action(parent, _("Revert"), Action::UPDATE_TREE)
 {
 }
 

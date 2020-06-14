@@ -75,6 +75,7 @@ include_HEADERS= \
 	include/merge_data.hpp \
 	include/merge_dlg.hpp \
 	include/mkdir_action.hpp \
+	include/modification_mgr.hpp \
 	include/move_action.hpp \
 	include/preferences_dlg.hpp \
 	include/preferences.hpp \
@@ -179,6 +180,7 @@ librapidsvn_la_SOURCES= \
 	src/merge_action.cpp \
 	src/merge_dlg.cpp \
 	src/mkdir_action.cpp \
+	src/modification_mgr.cpp \
 	src/move_action.cpp \
 	src/preferences.cpp \
 	src/preferences_dlg.cpp \

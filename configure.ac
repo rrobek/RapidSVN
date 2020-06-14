@@ -117,7 +117,7 @@ else
 fi
 CPPFLAGS="$CPPFLAGS -I$SVN_INCLUDE/subversion-1"
 
-SVN_LIBS="/usr/lib64 /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu"
+SVN_LIBS="/usr/lib64 /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/arm-linux-gnueabihf"
 AC_ARG_WITH(svn-lib,
 [[  --with-svn-lib=DIR  Use the given path to the subversion libraries.]],
 [

@@ -60,6 +60,7 @@
 #include "log_data.hpp"
 #include "drag_n_drop_data.hpp"
 #include "action_factory.hpp"
+#include "modification_mgr.hpp"
 #include "update_data.hpp"
 
 // actions
@@ -186,6 +187,7 @@ public:
   int horizSashPos;
   int vertSashPos;
   int idleCount;
+  ModificationManager m_modManager;
 
 private:
   bool m_running;
@@ -219,6 +221,9 @@ public:
       m_listCtrl(listCtrl), m_log(log)
   {
     InitializeMenu();
+    // link components together
+    m_folderBrowser->SetModificationManager(&m_modManager);
+    m_listCtrl->SetModificationManager(&m_modManager);
   }
 
   void
@@ -1163,10 +1168,12 @@ MainFrame::OnIndicateModifiedChildren(wxCommandEvent & WXUNUSED(event))
   // like the root element, we uncheck this
   if (!m_folderBrowser->SetIndicateModifiedChildren(newValue))
     newValue = false;
+  m_listCtrl->SetIndicateModifiedChildren(newValue);
 
   m->CheckMenu(ID_IndicateModifiedChildren, newValue);
 
   RefreshFolderBrowser();
+  RefreshFileList();
 }
 
 
@@ -2034,6 +2041,7 @@ MainFrame::OnFolderBrowserSelChanged(wxTreeEvent & WXUNUSED(event))
     m->CheckTool(ID_Flat, flatMode);
     bool indicateModifiedChildren = m_folderBrowser->GetIndicateModifiedChildren();
     m->CheckMenu(ID_IndicateModifiedChildren, indicateModifiedChildren);
+    m_listCtrl->SetIndicateModifiedChildren(indicateModifiedChildren);
 
     SetIncludePathVisibility(flatMode);
 

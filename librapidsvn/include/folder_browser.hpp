@@ -31,6 +31,7 @@
 class wxImageList;
 class FolderItemData;
 class wxConfigBase;
+class ModificationManager;
 
 namespace svn
 {
@@ -170,6 +171,13 @@ public:
    */
   bool
   SetFlat(bool flatMode);
+
+  /**
+   * Enables use of the modification manager,
+   * which is required to indicate the modified children.
+   */
+  void
+  SetModificationManager(ModificationManager*);
 
   /**
    * checks whether indication of modified content is

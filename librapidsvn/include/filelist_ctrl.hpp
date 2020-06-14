@@ -45,6 +45,7 @@ namespace svn
   class Status;
   class StatusSel;
 }
+class ModificationManager;
 
 class FileListCtrl : public wxListView
 {
@@ -254,6 +255,28 @@ public:
 
   void
   SetContext(svn::Context * Context);
+
+  /**
+   * Enables use of the modification manager,
+   * which is required to indicate the modified children.
+   */
+  void
+  SetModificationManager(ModificationManager*);
+
+  /**
+   * checks whether indication of modified content is
+   * currently switched on
+   *
+   * @retval true modified content is indicarted
+   */
+  bool
+  GetIndicateModifiedChildren() const;
+
+  /**
+   * switch on/off indication of modified children
+   */
+  void
+  SetIndicateModifiedChildren(bool show);
 
   /**
    * Makes sure the columns are updated correctly

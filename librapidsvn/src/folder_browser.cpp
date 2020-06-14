@@ -48,6 +48,7 @@
 #include "folder_item_data.hpp"
 #include "ids.hpp"
 #include "main_frame.hpp"
+#include "modification_mgr.hpp"
 #include "preferences.hpp"
 #include "rapidsvn_app.hpp"
 #include "rapidsvn_drop_target.hpp"
@@ -154,9 +155,10 @@ public:
   BookmarkHashMap bookmarks;
   svn::Context defaultContext;
   svn::StatusSel statusSel;
+  ModificationManager* modificationManager;
 
   Data(wxTreeCtrl * treeCtrl_)
-    : singleContext(0), listener(0), useAuthCache(true), treeCtrl(treeCtrl_)
+    : singleContext(0), listener(0), useAuthCache(true), treeCtrl(treeCtrl_), modificationManager(0)
   {
     imageList = new wxImageList(16, 16, TRUE);
     imageList->Add(EMBEDDED_BITMAP(computer_png));
@@ -584,54 +586,11 @@ public:
     bool pathIsUrl = parentPathUtf8.isUrl();
     bool indicateModifiedChildren  = GetSelectedBookmark().indicateModifiedChildren &&
                                      !pathIsUrl;
-    std::map<wxString, int> modifiedEntriesMap;
+    //std::map<wxString, int> modifiedEntriesMap;
 
-    if (indicateModifiedChildren)
+    if (indicateModifiedChildren && modificationManager)
     {
-      // Only get interesting entries
-      svn::StatusFilter modifiedFilter;
-      modifiedFilter.showUnversioned = false;
-      modifiedFilter.showUnmodified = false;
-      modifiedFilter.showModified = true;
-      modifiedFilter.showConflicted = true;
-      modifiedFilter.showExternals = false;
-      svn::StatusEntries modifiedEntries;
-      client.status(parentPathUtf8.c_str(), modifiedFilter, true, false,
-                    modifiedEntries);
-      wxChar pathSeparator = wxFileName::GetPathSeparator();
-
-      svn::StatusEntries::const_iterator it;
-      for (it = modifiedEntries.begin(); it != modifiedEntries.end(); it++)
-      {
-        const svn::Path modifiedPath((*it).path());
-        wxString path(PathToNative(modifiedPath).Mid(parentLength));
-        int separatorPos = path.Find(pathSeparator);
-
-        // we have to check, wether the entry we wanna add contains
-        // modified entries or is modified itself (in this case this
-        // counts) or if the modifications are deeper in the tree
-        // (in that case we only mark it as modified)
-        bool hasModifiedSubChildren = false;
-        if (wxNOT_FOUND != separatorPos)
-        {
-          wxString restPath(path.Mid(separatorPos+1));
-          path = path.Left(separatorPos);
-
-          if (wxNOT_FOUND != restPath.Find(pathSeparator))
-            hasModifiedSubChildren = true;
-        }
-
-        int modified_count = modifiedEntriesMap[path];
-        if (hasModifiedSubChildren)
-        {
-          if (0 == modified_count)
-            modifiedEntriesMap[path] = -1;
-        }
-        else if (modified_count < 0)
-          modifiedEntriesMap[path] = 1;
-        else
-          modifiedEntriesMap[path]++;
-      }
+      modificationManager->QueryPath(client, parentPath);
     }
 
 
@@ -680,16 +639,17 @@ public:
           TRUE);
         data->setStatus(status);
 
+        int modified_count = 0;
+        if (indicateModifiedChildren && modificationManager)
+          modified_count = modificationManager->GetStatus(parentPath, path.Mid(parentLength)); // modifiedEntriesMap[path.Mid(parentLength)];
+
         if ((status.textStatus() == svn_wc_status_modified) ||
-            (status.propStatus() == svn_wc_status_modified))
+            (status.propStatus() == svn_wc_status_modified) ||
+            modified_count != 0)
         {
           image = FOLDER_IMAGE_MODIFIED_FOLDER;
           open_image = FOLDER_IMAGE_MODIFIED_OPEN_FOLDER;
         }
-
-        int modified_count = 0;
-        if (indicateModifiedChildren)
-          modified_count = modifiedEntriesMap[path.Mid(parentLength)];
 
         wxString label(basename);
         if (modified_count > 0)
@@ -1062,6 +1022,8 @@ FolderBrowser::RefreshFolderBrowser()
   wxString path = m->GetPath();
 
   // refresh contents
+  if (m->modificationManager && !bookmarkPath.IsEmpty())
+    m->modificationManager->Cleanup(bookmarkPath);
   m->treeCtrl->Collapse(m->rootId);
   m->treeCtrl->Expand(m->rootId);
 
@@ -1282,6 +1244,11 @@ FolderBrowser::SetFlat(bool flatMode)
 
   bookmark.flatMode = flatMode;
   return true;
+}
+
+void FolderBrowser::SetModificationManager(ModificationManager * mgr)
+{
+  m->modificationManager = mgr;
 }
 
 bool

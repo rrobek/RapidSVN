@@ -566,7 +566,7 @@ Listener::contextNotify(const char *path,
     break;
   }
 
-  if(detail != NULL)
+  if (detail != NULL)
     Trace(LogItem_Warning, _("Warning"), detail);
 
 #ifdef USE_SIMPLE_WORKER

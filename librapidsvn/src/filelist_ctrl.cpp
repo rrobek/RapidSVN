@@ -49,6 +49,7 @@
 #include "filelist_ctrl.hpp"
 #include "ids.hpp"
 #include "main_frame.hpp"
+#include "modification_mgr.hpp"
 #include "preferences.hpp"
 #include "rapidsvn_app.hpp"
 #include "utils.hpp"
@@ -656,6 +657,7 @@ public:
   wxWindow * Parent;
   wxImageList * ImageListSmall;
   wxString Path;
+  ModificationManager* modificationManager;
 
   svn::Context * Context;
   Columns ColumnList;
@@ -665,6 +667,7 @@ public:
   bool SortAscending;
   bool DirtyColumns;
   bool FlatMode;
+  bool ShowModifiedChildren;
   bool WithUpdate;
   bool ShowUnversioned;
   bool ShowUnmodified;
@@ -698,7 +701,7 @@ public:
   ~Data();
 
   int
-  GetImageIndex(const svn::Status & status);
+  GetImageIndex(const svn::Status & status, bool subItemModified);
 
   int
   GetSortImageIndex(bool sortDown);
@@ -718,9 +721,10 @@ public:
 
 /** default constructor */
 FileListCtrl::Data::Data()
-  : Context(0), SortColumn(COL_NAME),
+  : modificationManager(0), Context(0), SortColumn(COL_NAME),
     IncludePath(true), SortAscending(true),
     DirtyColumns(true), FlatMode(false),
+    ShowModifiedChildren(false),
     WithUpdate(false), ShowUnversioned(true),
     IgnoreExternals(false), ShowIgnored(false)
 #if WORKAROUND_ISSUE_324
@@ -773,7 +777,7 @@ FileListCtrl::Data::~Data()
  * exceptions.
  */
 int
-FileListCtrl::Data::GetImageIndex(const svn::Status & status)
+FileListCtrl::Data::GetImageIndex(const svn::Status & status, bool subItemModified)
 {
   int imageIndex = 0;
 
@@ -810,7 +814,8 @@ FileListCtrl::Data::GetImageIndex(const svn::Status & status)
     if (IsDir(&status))
     {
       if ((textIndex == svn_wc_status_modified) ||
-          (propIndex == svn_wc_status_modified))
+          (propIndex == svn_wc_status_modified) ||
+          subItemModified)
       {
         imageIndex = ImageIndexArray[IMG_INDX_MODIFIED_VERSIONED_FOLDER + lock_offset];
       }
@@ -1096,6 +1101,8 @@ FileListCtrl::RefreshFileList()
                   m->WithUpdate, statusSelector);
 #endif
 
+    if (m->modificationManager && m->ShowModifiedChildren && !m->FlatMode && !pathUtf8.isUrl())
+      m->modificationManager->QueryPath(client, m->Path);
 
     svn::StatusEntries::const_iterator it;
     for (it = statusSelector.begin(); it != statusSelector.end(); it++)
@@ -1148,7 +1155,7 @@ FileListCtrl::CreateLabels(const svn::Status & status, const svn::Path & basePat
 {
   wxString values[COL_COUNT];
   svn::Path fullPath;
-  bool isDot;;
+  bool isDot;
   svn::Path pathUtf8;
 
 #if WORKAROUND_ISSUE_324
@@ -1211,13 +1218,30 @@ FileListCtrl::CreateLabels(const svn::Status & status, const svn::Path & basePat
   }
 
   int i = GetItemCount();
-  int imageIndex = m->GetImageIndex(status);
+  int subItemsModified = 0;
+  if (m->modificationManager && !m->FlatMode && !isUrl) {
+    // Only show sub-modification info for folders; for files it will be immediately visible from the icon anyway
+    if (IsDir(&status)) {
+      int modStatus = m->modificationManager->GetStatus(PathToNative(basePathUtf8), values[COL_NAME]);
+      if (modStatus != 0) {
+        subItemsModified = modStatus;
+      }
+    }
+  }
+
+  int imageIndex = m->GetImageIndex(status, subItemsModified != 0);
 
   // User want to see unversioned or outdated entries?
   if (status.isVersioned() || m->ShowUnversioned ||
       (svn_node_none != status.oodKind()))
   {
     InsertItem(i, values[COL_NAME], imageIndex);
+    /*             wxFont font = GetItemFont(l);
+                SetItemFont(l, font.Bold());
+            }
+        }
+    }*/
+
 
     // The item data will be used to sort the list:
     SetItemData(i, (long) new svn::Status(status));      // The control now owns this data
@@ -1310,6 +1334,13 @@ FileListCtrl::CreateLabels(const svn::Status & status, const svn::Path & basePat
         StatusDescription(status.textStatus());
       break;
     }
+    if (values[COL_TEXT_STATUS].IsEmpty())
+    {
+      if (subItemsModified > 0)
+        values[COL_TEXT_STATUS] = wxString::Format(wxPLURAL("%d element modified", "%d elements modified", subItemsModified), subItemsModified);
+      else if (subItemsModified < 0)
+        values[COL_TEXT_STATUS] = _("element(s) modified");
+    }
     switch (status.propStatus())
     {
     case svn_wc_status_none:
@@ -1399,6 +1430,24 @@ void
 FileListCtrl::SetContext(svn::Context * Context)
 {
   m->Context = Context;
+}
+
+void FileListCtrl::SetModificationManager(ModificationManager * mgr)
+{
+  m->modificationManager = mgr;
+}
+
+
+bool
+FileListCtrl::GetIndicateModifiedChildren() const
+{
+  return m->ShowModifiedChildren;
+}
+
+void
+FileListCtrl::SetIndicateModifiedChildren(bool newValue)
+{
+  m->ShowModifiedChildren = newValue;
 }
 
 void
